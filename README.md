@@ -10,6 +10,8 @@
 ** Port numbers above 1024 are referred to as ephemeral ports.
      Port numbers 1024 to 49151 are called the registered/user ports.
      Port numbers 49152 to 65535 are called the dynamic/private ports.
+     
+TCP and UDP, which are the most common protocols for packet transmission in the network layer.
 
   1. Open a Port on a machine:
   https://www.digitalocean.com/community/tutorials/opening-a-port-on-linux
