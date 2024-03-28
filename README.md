@@ -15,3 +15,7 @@ TCP and UDP, which are the most common protocols for packet transmission in the 
 
   1. Open a Port on a machine:
   https://www.digitalocean.com/community/tutorials/opening-a-port-on-linux
+
+
+
+# Creating Infinispan server using configuration: 
