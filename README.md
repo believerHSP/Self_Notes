@@ -19,3 +19,10 @@ TCP and UDP, which are the most common protocols for packet transmission in the 
 
 
 # Creating Infinispan server using configuration: 
+
+Machine 1
+podman run -d --name infinispan-site-1 -e USER=keen -e PASS=KeenAble@123 --net=host --user=root -v /home/rocky/server1:/opt/infinispan/server1 -v /home/rocky/newxsite.xml:/opt/infinispan/server/conf/newxsite.xml -p 11222:11222 -p 7900:7900 quay.io/infinispan/server:15.0 -c newxsite.xml -s server1 -Dinfinispan.site.name=site1
+
+Machine 2:
+podman run -d --name infinispan-site-2 -e USER=keen -e PASS=KeenAble@123 --net=host --user=root -v /home/azureuser/server2:/opt/infinispan/server2 -v /home/azureuser/newxsite.xml:/opt/infinispan/server/conf/newxsite.xml -p 11222:11222 -p 7900:7900 quay.io/infinispan/server:15.0 -c newxsite.xml -s server2 -Dinfinispan.site.name=site2
+
