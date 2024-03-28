@@ -26,3 +26,7 @@ podman run -d --name infinispan-site-1 -e USER=keen -e PASS=KeenAble@123 --net=h
 Machine 2:
 podman run -d --name infinispan-site-2 -e USER=keen -e PASS=KeenAble@123 --net=host --user=root -v /home/azureuser/server2:/opt/infinispan/server2 -v /home/azureuser/newxsite.xml:/opt/infinispan/server/conf/newxsite.xml -p 11222:11222 -p 7900:7900 quay.io/infinispan/server:15.0 -c newxsite.xml -s server2 -Dinfinispan.site.name=site2
 
+1. Tried this conf:
+https://developer.jboss.org/thread/221049
+
+https://kb.novaordis.com/index.php/Infinispan_Cache_Container_Configuration
