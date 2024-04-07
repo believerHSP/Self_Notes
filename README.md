@@ -29,4 +29,4 @@ podman run -d --name infinispan-site-2 -e USER=keen -e PASS=KeenAble@123 --net=h
 1. Tried this conf:
 https://developer.jboss.org/thread/221049
 
-https://kb.novaordis.com/index.php/Infinispan_Cache_Container_Configuration
+https://kb.novaordis.com/index.php/Infinispan_Cache_Container_Configuration    ..
